@@ -1,0 +1,55 @@
+PLAN PHOTO — NOM À UTILISER SUR LE SITE
+
+1. HERO
+Fichier site : assets/hero.jpg
+Source retouchée : régie_vidéo_face_au_fond_vert.png
+Usage : première image plein écran. Résume régie + plateau + multicam.
+
+2. MULTICAM / LIVE
+Fichier site : assets/live.jpg
+Source retouchée : régie_de_diffusion_sportive_en_action.png
+Usage : offre phare "Régie multicam & diffusion live".
+
+3. FORMATION / CONTENU EXPERT
+Fichier site : assets/formation.jpg
+Source retouchée : plateau_d_interview_avec_logo_lumineux_et_dentitio.png
+Usage : carte formation / masterclass / interview. Visages anonymisés.
+
+4. POSTPRODUCTION
+Fichier site : assets/postprod.jpg
+Source : editing-studio-with-computer-and-dual-monitor-setu-2026-03-24-07-44-35-utc.jpg
+Usage : carte montage / étalonnage / content factory.
+
+5. PROJET ÉVÉNEMENT / LIVE
+Fichier site : assets/project-sport.jpg
+Source retouchée : régie_au_bord_de_la_patinoire_lumineuse.png
+Usage : portfolio live événementiel / régie / public.
+
+6. PROJET PLATEAU / CORPORATE
+Fichier site : assets/project-corporate.jpg
+Source retouchée : tournage_en_studio_sous_lumières_violettes.png
+Usage : portfolio interview / plateau / lumière.
+
+7. PROJET MÉDICAL / TECHNIQUE
+Fichier site : assets/project-medical.jpg
+Source retouchée : dispositif_chirurgical_et_instruments_stériles.png
+Usage : portfolio captation spécialisée. Personnes anonymisées.
+
+8. PROJET CONFÉRENCE
+Fichier site : assets/project-event.jpg
+Source retouchée : conférence_médicale_sur_scène_lumineuse.png
+Usage : portfolio conférence / public / multicam.
+
+9. CONTACT / COULISSES
+Fichier site : assets/contact.jpg
+Source retouchée : régie_technique_sous_la_grande_tente.png
+Usage : grande image de fond de la section contact.
+
+10. POSTER DU SHOWREEL
+Fichier site : assets/showreel-poster.jpg
+Source : même image que live.jpg
+Usage : visuel temporaire puis poster du lecteur vidéo.
+
+VIDÉO À AJOUTER PLUS TARD
+Fichier attendu : assets/showreel.mp4
+Le site l'activera automatiquement dès qu'il est présent.

@@ -1,23 +1,25 @@
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) entry.target.classList.add('on');
-  });
-}, { threshold: 0.08 });
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('in'); });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
-
-const glow = document.querySelector('.cursor-glow');
-if (glow && window.matchMedia('(pointer:fine)').matches) {
-  window.addEventListener('pointermove', (e) => {
-    glow.style.left = `${e.clientX}px`;
-    glow.style.top = `${e.clientY}px`;
-  });
-}
-
-const hero = document.querySelector('.hero-media');
-if (hero && window.matchMedia('(min-width: 900px)').matches) {
-  window.addEventListener('scroll', () => {
-    const y = Math.min(window.scrollY * 0.08, 32);
-    hero.style.transform = `scale(1.035) translateY(${y}px)`;
-  }, { passive: true });
+// Auto-active le showreel dès que assets/showreel.mp4 existe sur le site.
+const shell = document.getElementById('showreelShell');
+if (shell) {
+  const src = shell.dataset.video;
+  const poster = shell.dataset.poster;
+  fetch(src, { method: 'HEAD', cache: 'no-store' }).then(r => {
+    if (!r.ok) return;
+    const video = document.createElement('video');
+    video.controls = true;
+    video.playsInline = true;
+    video.preload = 'metadata';
+    video.poster = poster;
+    const source = document.createElement('source');
+    source.src = src;
+    source.type = 'video/mp4';
+    video.appendChild(source);
+    shell.innerHTML = '';
+    shell.appendChild(video);
+  }).catch(() => {});
 }
