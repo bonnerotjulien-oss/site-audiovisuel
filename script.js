@@ -46,7 +46,7 @@ if (form && status) {
       status.textContent = 'Merci. Votre message a bien été envoyé.';
     } catch (error) {
       status.classList.add('error');
-      status.innerHTML = 'L’envoi n’a pas abouti. Vous pouvez écrire directement à <a href="mailto:bonnerot.julien.isis@gmail.com">bonnerot.julien.isis@gmail.com</a>.';
+      status.textContent = 'L’envoi n’a pas abouti. Merci de réessayer dans quelques instants.';
     } finally {
       button.disabled = false;
     }
