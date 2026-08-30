@@ -8,7 +8,7 @@
   <meta property="og:title" content="Production audiovisuelle · Multicam · Live" />
   <meta property="og:description" content="Conception, réalisation, captation multicam, postproduction et diffusion." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="assets/hero.jpg" />
+  <meta property="og:image" content="assets/hero-poster.jpg" />
   <title>Julien Bonnerot · Production audiovisuelle · Multicam · Live</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
@@ -32,7 +32,9 @@
 
   <main>
     <section class="hero">
-      <img class="hero-img" src="assets/hero.jpg" alt="Régie audiovisuelle et plateau de production" />
+      <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="assets/hero-poster.jpg" aria-hidden="true" tabindex="-1">
+        <source src="assets/hero-loop.mp4" type="video/mp4" />
+      </video>
       <div class="hero-overlay"></div>
       <div class="hero-grid"></div>
       <div class="hero-content shell">
@@ -55,6 +57,21 @@
       </div>
     </section>
 
+    <section class="logo-strip" aria-label="Ils nous ont fait confiance">
+      <div class="shell logo-strip-inner reveal">
+        <p class="logo-strip-title">Ils nous ont fait confiance</p>
+        <div class="logo-rail">
+          <div class="logo-item"><img src="assets/logos/rochefort.svg" alt="Ville de Rochefort" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-block'" /><span class="logo-fallback">Ville de Rochefort</span></div>
+          <div class="logo-item"><img src="assets/logos/natv.svg" alt="NA TV" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-block'" /><span class="logo-fallback">NA TV</span></div>
+          <div class="logo-item"><img src="assets/logos/m6.svg" alt="M6" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-block'" /><span class="logo-fallback">M6</span></div>
+          <div class="logo-item"><img src="assets/logos/lfprod.svg" alt="LF Prod" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-block'" /><span class="logo-fallback">LF Prod</span></div>
+          <div class="logo-item"><img src="assets/logos/lacali.svg" alt="La Cali" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-block'" /><span class="logo-fallback">La Cali</span></div>
+          <div class="logo-item"><img src="assets/logos/helloasso.svg" alt="HelloAsso" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-block'" /><span class="logo-fallback">HelloAsso</span></div>
+          <div class="logo-item"><img src="assets/logos/rinkhockeycoutras.svg" alt="Rink Hockey Coutras" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-block'" /><span class="logo-fallback">Rink Hockey Coutras</span></div>
+        </div>
+      </div>
+    </section>
+
     <section class="showreel-section section shell" id="showreel">
       <div class="section-heading reveal">
         <div><p class="eyebrow">SHOWREEL / 60 SEC</p><h2>Voir le savoir-faire<br><em>avant d’en parler.</em></h2></div>
@@ -74,20 +91,6 @@
       <div class="shell trustbar-inner"><span>UN INTERLOCUTEUR UNIQUE</span><i></i><span>DISPOSITIF LÉGER & PROFESSIONNEL</span><i></i><span>LIVRABLES MULTI-FORMATS</span><i></i><span>RÉPONSE RAPIDE</span></div>
     </section>
 
-    <section class="logo-strip" aria-label="Ils nous ont fait confiance">
-      <div class="shell logo-strip-inner reveal">
-        <p class="logo-strip-title">Ils nous ont fait confiance</p>
-        <div class="logo-rail">
-          <div class="logo-item"><img src="assets/logos/rochefort.svg" alt="Ville de Rochefort" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-block'" /><span class="logo-fallback">Ville de Rochefort</span></div>
-          <div class="logo-item"><img src="assets/logos/natv.svg" alt="NA TV" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-block'" /><span class="logo-fallback">NA TV</span></div>
-          <div class="logo-item"><img src="assets/logos/m6.svg" alt="M6" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-block'" /><span class="logo-fallback">M6</span></div>
-          <div class="logo-item"><img src="assets/logos/lfprod.svg" alt="LF Prod" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-block'" /><span class="logo-fallback">LF Prod</span></div>
-          <div class="logo-item"><img src="assets/logos/lacali.svg" alt="La Cali" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-block'" /><span class="logo-fallback">La Cali</span></div>
-          <div class="logo-item"><img src="assets/logos/helloasso.svg" alt="HelloAsso" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-block'" /><span class="logo-fallback">HelloAsso</span></div>
-          <div class="logo-item"><img src="assets/logos/rinkhockeycoutras.svg" alt="Rink Hockey Coutras" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-block'" /><span class="logo-fallback">Rink Hockey Coutras</span></div>
-        </div>
-      </div>
-    </section>
 
     <section class="section shell intro">
       <div class="intro-number reveal">01</div>
