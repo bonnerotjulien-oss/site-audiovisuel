@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; media-src 'self'; font-src 'self'; connect-src 'self' https://formsubmit.co; form-action 'self' https://formsubmit.co; upgrade-insecure-requests" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
   <meta name="description" content="Production audiovisuelle, réalisation multicam, live, contenus experts et postproduction. De la conception à la diffusion." />
   <meta name="theme-color" content="#0b0b0c" />
   <meta property="og:title" content="Julien Bonnerot · Production audiovisuelle" />
@@ -167,20 +169,19 @@
           <a class="contact-email" href="mailto:bonnerot.julien.isis@gmail.com">bonnerot.julien.isis@gmail.com</a>
         </div>
 
-        <form class="contact-form reveal delay-1" id="contactForm" action="https://formsubmit.co/ajax/bonnerot.julien.isis@gmail.com" method="POST">
+        <form class="contact-form reveal delay-1" id="contactForm" action="https://formsubmit.co/ajax/7f390faee94d018f3a67518d826e69da" method="POST">
           <input type="hidden" name="_subject" value="Nouvelle demande — site audiovisuel Julien Bonnerot" />
-          <input type="hidden" name="_captcha" value="false" />
           <input type="text" name="_honey" class="hp-field" tabindex="-1" autocomplete="off" />
 
           <div class="form-row">
-            <label><span>Prénom</span><input type="text" name="prenom" autocomplete="given-name" required /></label>
-            <label><span>Nom</span><input type="text" name="nom" autocomplete="family-name" required /></label>
+            <label><span>Prénom</span><input type="text" name="prenom" autocomplete="given-name" minlength="2" maxlength="80" required /></label>
+            <label><span>Nom</span><input type="text" name="nom" autocomplete="family-name" minlength="2" maxlength="80" required /></label>
           </div>
-          <label><span>E-mail</span><input type="email" name="email" autocomplete="email" required /></label>
-          <label><span>Votre projet</span><textarea name="message" rows="7" placeholder="Format, date, lieu, diffusion, contraintes particulières…" required></textarea></label>
+          <label><span>E-mail</span><input type="email" name="email" autocomplete="email" inputmode="email" maxlength="160" required /></label>
+          <label><span>Votre projet</span><textarea name="message" rows="7" minlength="20" maxlength="5000" placeholder="Format, date, lieu, diffusion, contraintes particulières…" required></textarea></label>
 
           <button class="form-submit" type="submit"><span>Envoyer le message</span><b>↗</b></button>
-          <p class="form-note">Vos coordonnées sont utilisées uniquement pour répondre à votre demande.</p>
+          <p class="form-note">Vos coordonnées sont utilisées uniquement pour répondre à votre demande. <a href="confidentialite.html">Confidentialité</a></p>
           <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
         </form>
       </div>
@@ -190,7 +191,7 @@
   <footer class="shell">
     <a class="brand" href="#top"><span class="brand-mark"><img src="assets/jb-mark.png" alt="" /></span><span class="brand-copy"><b>JULIEN BONNEROT</b><small>PRODUCTION AUDIOVISUELLE</small></span></a>
     <p>Créer. Produire. Diffuser.</p>
-    <a href="mailto:bonnerot.julien.isis@gmail.com">E-mail ↗</a>
+    <div class="footer-links"><a href="confidentialite.html">Confidentialité</a><a href="mailto:bonnerot.julien.isis@gmail.com">E-mail ↗</a></div>
   </footer>
 
   <a class="mobile-cta" href="#contact">Parler d’un projet <span>↗</span></a>
