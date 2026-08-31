@@ -6,3 +6,9 @@ V5.0 — À FAIRE APRÈS MISE EN LIGNE
 4. Ajouter le site à Google Search Console puis soumettre sitemap.xml.
 5. Quand un nom de domaine professionnel est acheté, modifier canonical, og:url, og:image, JSON-LD, robots.txt et sitemap.xml avec le nouveau domaine.
 6. Les logos de partenaires restent hébergés localement ; remplacer les SVG de assets/logos/ par les fichiers officiels quand ils sont disponibles, en conservant les mêmes noms.
+
+
+DOMAINE PERSONNALISÉ
+Le site est configuré pour https://julienbonnerot.fr/
+Le fichier CNAME contient julienbonnerot.fr.
+GitHub Pages : Custom domain = julienbonnerot.fr et Enforce HTTPS activé.
