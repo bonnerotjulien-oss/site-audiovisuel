@@ -1,0 +1,14 @@
+VERSION V5.3 — LOGOS PARTENAIRES
+
+Le fichier index.html doit contenir des liens .png vers :
+assets/logos/m6.png
+assets/logos/lfprod.png
+assets/logos/natv.png
+assets/logos/odontia.png
+assets/logos/lacali.png
+assets/logos/helloasso.png
+assets/logos/france-travail.png
+assets/logos/rinkhockeycoutras.png
+
+IMPORTANT : décompresser le ZIP avant l'envoi sur GitHub. Ne pas envoyer le ZIP tel quel.
+Dans le dépôt, le dossier assets/logos doit contenir les 8 PNG ci-dessus.
