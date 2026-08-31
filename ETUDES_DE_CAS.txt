@@ -1,0 +1,9 @@
+V5.4 — ÉTUDES DE CAS
+
+Pages ajoutées :
+- cas-live-sportif.html
+- cas-plateau-interview.html
+- cas-contenu-medical.html
+
+Les trois projets sont désormais cliquables depuis la section Réalisations et depuis les cartes Exemples de dispositifs.
+Le sitemap.xml a été mis à jour avec les trois nouvelles pages.
