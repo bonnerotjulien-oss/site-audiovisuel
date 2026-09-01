@@ -1,0 +1,14 @@
+LOGOS PARTENAIRES — V5.2
+
+Les logos fournis ont été intégrés localement dans assets/logos/ :
+- m6.png
+- lfprod.png
+- natv.png
+- odontia.png
+- lacali.png
+- helloasso.png
+- france-travail.png
+- rinkhockeycoutras.png
+
+Les fonds blancs de NA TV, Odontia et Rink Hockey Coutras ont été retirés avant intégration.
+Le bandeau affiche les marques en niveaux de gris avec retour aux couleurs au survol, afin de conserver l'esthétique premium et discrète du site.

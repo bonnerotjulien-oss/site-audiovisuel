@@ -25,7 +25,7 @@
   <link rel="icon" type="image/png" sizes="192x192" href="favicon-192x192.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
   <link rel="preload" as="image" href="assets/hero-poster.jpg" fetchpriority="high" />
-  <link rel="stylesheet" href="styles.css?v=54" />
+  <link rel="stylesheet" href="styles.css?v=60" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -102,12 +102,20 @@
       <div class="section-heading section-heading-simple reveal">
         <div><p class="eyebrow">SHOWREEL</p><h2>30 secondes.<br><em>Un aperçu de notre univers.</em></h2></div>
       </div>
-      <div class="showreel-shell reveal" id="showreelShell" data-video="assets/showreel.mp4" data-poster="assets/showreel-poster.jpg">
-        <img loading="lazy" decoding="async" src="assets/showreel-poster.jpg" alt="Aperçu du showreel audiovisuel" />
+      <figure class="showcase-visual reveal">
+        <img loading="lazy" decoding="async" src="assets/showcase-composite.png" alt="Composition visuelle réunissant live sportif, conférence, tournage studio, contenu médical et postproduction." />
+        <figcaption>
+          <span>LIVE · PLATEAU · MÉDICAL · POSTPRODUCTION</span>
+          <strong>Une image signature pour traduire l’étendue des dispositifs que nous pouvons produire.</strong>
+        </figcaption>
+      </figure>
+      <div class="showreel-shell reveal delay-1" id="showreelShell" data-video="assets/showreel.mp4" data-poster="assets/showreel-poster-v6.png">
+        <img loading="lazy" decoding="async" src="assets/showreel-poster-v6.png" alt="Vignette premium du showreel audiovisuel" />
         <div class="showreel-shade"></div>
+        <div class="showreel-badge" aria-hidden="true">SHOWREEL · 30 s</div>
         <button class="showreel-placeholder" type="button" aria-label="Lire le showreel">
           <span class="play-disc">▶</span>
-          <span><strong>VOIR LE SHOWREEL</strong><small>avec le son</small></span>
+          <span><strong>LANCER LE SHOWREEL</strong><small>une sélection de formats et dispositifs</small></span>
         </button>
       </div>
     </section>
@@ -260,6 +268,6 @@
   </footer>
 
   <a class="mobile-cta" href="#contact">Parler d’un projet <span>↗</span></a>
-  <script src="script.js?v=54"></script>
+  <script src="script.js?v=60"></script>
 </body>
 </html>
