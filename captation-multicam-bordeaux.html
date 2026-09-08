@@ -116,6 +116,31 @@
       .service-proof-item:last-child{border-bottom:0!important}.process-grid{grid-template-columns:1fr}.case-seo-card{min-height:360px}
       .pricing-card{padding:24px}.service-hero-lead{font-size:16px}
     }
+
+    .service-form-section{background:#0f0f0f;border-top:1px solid var(--line)}
+    .service-form-wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:80px;align-items:start}
+    .service-form-copy h2{font-size:clamp(42px,5vw,72px);line-height:.98;letter-spacing:-.055em;margin:0 0 24px}
+    .service-form-copy h2 em{font-style:normal;color:var(--accent)}
+    .service-form-copy>p{color:#99958e;line-height:1.75;max-width:560px}
+    .service-form-points{display:grid;gap:12px;margin-top:28px;color:#c7c3bc;font-size:13px}
+    .service-lead-form{border:1px solid var(--line);border-radius:24px;background:#151515;padding:30px}
+    .service-lead-form label{display:block;margin-bottom:16px}
+    .service-lead-form label>span{display:block;font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#a9a59e;margin-bottom:8px}
+    .service-lead-form label small{font-size:9px;font-weight:500;text-transform:none;letter-spacing:0;color:#77736d}
+    .service-lead-form input,.service-lead-form textarea{width:100%;border:1px solid #2b2a28;background:#0d0d0d;color:#f4f1eb;border-radius:12px;padding:14px 15px;font:inherit;outline:none}
+    .service-lead-form input:focus,.service-lead-form textarea:focus{border-color:#8d7650}
+    .service-lead-form textarea{resize:vertical;min-height:150px}
+    .service-form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .service-submit{margin-top:6px;width:100%}
+    .service-form-status{min-height:22px;margin-top:12px;color:#c6b08b;font-size:12px}
+    @media(max-width:900px){
+      .service-form-wrap{grid-template-columns:1fr;gap:34px}
+    }
+    @media(max-width:580px){
+      .service-lead-form{padding:20px}
+      .service-form-row{grid-template-columns:1fr;gap:0}
+    }
+
   </style>
   <script type="application/ld+json">
 {
@@ -225,7 +250,7 @@
 }
   </script>
 </head>
-<body class="service-seo">
+<body class="service-seo" data-service-page="captation_multicam">
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NM8S3KBX"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -239,9 +264,9 @@
     <nav aria-label="Navigation principale">
       <a href="index.html#services">Services</a>
       <a href="index.html#realisations">Réalisations</a>
-      <a href="index.html#contact">Contact</a>
+      <a href="#devis">Contact</a>
     </nav>
-    <a class="btn btn-small btn-accent" href="index.html#contact">Parler d’un projet <span>↗</span></a>
+    <a class="btn btn-small btn-accent" href="#devis">Parler d’un projet <span>↗</span></a>
   </header>
   <main>
     <section class="service-hero">
@@ -249,10 +274,10 @@
       <div class="shell service-hero-content">
         <a class="service-breadcrumb" href="index.html#services">← Services</a>
         <p class="kicker">CAPTATION VIDÉO · BORDEAUX · LIBOURNE · GIRONDE</p>
-        <h1>Captation multicam.<br><em>Une réalisation qui tient le direct.</em></h1>
+        <h1>Captation multicam à Bordeaux,<br><em>Libourne et en Gironde.</em></h1>
         <p class="service-hero-lead">Conférences, sport, spectacles, théâtre, événements institutionnels ou plateaux : jusqu’à cinq caméras, régie vidéo et master inclus.</p>
         <div class="service-hero-actions">
-          <a class="btn btn-accent" href="index.html#contact">Recevoir un devis sous 24 h <span>↗</span></a>
+          <a class="btn btn-accent" href="#devis">Recevoir un devis sous 24 h <span>↗</span></a>
           <a class="btn btn-ghost" href="#details">Voir le dispositif <span>↓</span></a>
         </div>
       </div>
@@ -328,7 +353,7 @@
             <div class="price">1 290 € HT <small>à partir de</small></div>
             <p>Pour les conférences, événements, spectacles ou rencontres nécessitant une réalisation multicam et un master exploitable.</p>
             <ul><li>dispositif adapté au lieu</li><li>jusqu’à 5 caméras selon projet</li><li>régie et réalisation</li><li>master inclus</li><li>livraison généralement sous 48 h</li></ul>
-            <a class="btn" href="index.html#contact">Demander un devis <span>↗</span></a>
+            <a class="btn" href="#devis">Demander un devis <span>↗</span></a>
           </article>
           <article class="pricing-card featured">
             <span>OPTIONS</span>
@@ -336,7 +361,7 @@
             <div class="price">Sur devis</div>
             <p>Les mêmes images peuvent alimenter plusieurs canaux sans organiser un second tournage.</p>
             <ul><li>résumé de l’événement</li><li>ralentis</li><li>Reels / Shorts / TikTok</li><li>sous-titres</li><li>formats 16:9, 1:1 et 9:16</li></ul>
-            <a class="btn btn-light" href="index.html#contact">Composer le dispositif <span>↗</span></a>
+            <a class="btn btn-light" href="#devis">Composer le dispositif <span>↗</span></a>
           </article>
         </div>
         <p class="price-note">Zone prioritaire : Haute-Gironde, Libournais, Bordeaux et Gironde. Déplacements facturés au-delà de 60 km depuis Les Églisottes-et-Chalaures. Toute prestation est confirmée par devis selon durée, équipe, nombre de caméras et contraintes techniques.</p>
@@ -355,9 +380,51 @@
       <div class="zone-note"><strong>Bordeaux + Libourne + Gironde</strong><p>Le référencement cible ces zones sans prétendre être basé à Bordeaux : l’activité est implantée en Haute-Gironde et se déplace sur l’ensemble du territoire selon le projet.</p></div>
     </section>
 
+
+    <section class="service-form-section section" id="devis">
+      <div class="shell service-form-wrap">
+        <div class="service-form-copy">
+          <p class="eyebrow">DEVIS / PREMIÈRE ESTIMATION</p>
+          <h2>Décrivez le projet.<br><em>Réponse sous 24 h.</em></h2>
+          <p>Quelques informations suffisent pour déterminer le dispositif, l’équipe et le budget à envisager. Aucun e-mail n’est affiché publiquement : l’échange démarre via ce formulaire.</p>
+          <div class="service-form-points">
+            <span>✓ Première orientation ou devis sous 24 h</span>
+            <span>✓ Appel possible si le projet mérite un échange rapide</span>
+            <span>✓ Aucun engagement avant validation du devis</span>
+          </div>
+        </div>
+
+        <form class="service-lead-form" data-track-form="captation_multicam" action="https://formsubmit.co/ajax/7f390faee94d018f3a67518d826e69da" method="POST">
+          <input type="hidden" name="_subject" value="Demande devis — Captation multicam" />
+          <input type="hidden" name="origine" value="Captation multicam Bordeaux" />
+          <input type="text" name="_honey" class="hp-field" tabindex="-1" autocomplete="off" />
+
+          <div class="service-form-row">
+            <label><span>Nom / structure</span><input type="text" name="nom" autocomplete="name" minlength="2" maxlength="120" required /></label>
+            <label><span>E-mail</span><input type="email" name="email" autocomplete="email" inputmode="email" maxlength="160" required /></label>
+          </div>
+
+          <div class="service-form-row">
+            <label><span>Téléphone <small>(optionnel)</small></span><input type="tel" name="telephone" autocomplete="tel" maxlength="40" /></label>
+            <label><span>Date / période</span><input type="text" name="date_periode" maxlength="100" placeholder="Ex. 15 novembre / janvier 2027" /></label>
+          </div>
+
+          <label><span>Lieu</span><input type="text" name="lieu" maxlength="160" placeholder="Ville ou lieu de l’événement / tournage" /></label>
+
+          <label><span>Votre projet</span><textarea name="message" rows="7" minlength="20" maxlength="5000" placeholder="Type d’événement, durée, nombre de caméras envisagé, diffusion éventuelle, contraintes du lieu…" required></textarea></label>
+
+          <button class="form-submit service-submit" type="submit">
+            <span>Recevoir une première estimation sous 24 h</span><b>↗</b>
+          </button>
+          <p class="form-note">Vos coordonnées sont utilisées uniquement pour répondre à votre demande. <a href="confidentialite.html">Confidentialité</a></p>
+          <p class="form-status service-form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
     <section class="service-cta section"><div class="shell service-cta-inner">
       <div><p class="eyebrow">VOTRE ÉVÉNEMENT</p><h2>Un besoin clair.<br><em>Un dispositif lisible.</em></h2></div>
-      <div><p>Indiquez la date, le lieu, la durée, le nombre d’intervenants et le mode de diffusion envisagé. Je reviens vers vous avec une première orientation ou un devis sous 24 h.</p><a class="btn" href="index.html#contact">Parler du projet <span>↗</span></a></div>
+      <div><p>Indiquez la date, le lieu, la durée, le nombre d’intervenants et le mode de diffusion envisagé. Je reviens vers vous avec une première orientation ou un devis sous 24 h.</p><a class="btn" href="#devis">Parler du projet <span>↗</span></a></div>
     </div></section>
 
   </main>
@@ -366,7 +433,8 @@
     <p>Créer. Produire. Diffuser.</p>
     <div class="footer-links"><a href="confidentialite.html">Confidentialité</a></div>
   </footer>
-  <a class="mobile-cta" href="index.html#contact">Parler d’un projet <span>↗</span></a>
+  <a class="mobile-cta" href="#devis">Parler d’un projet <span>↗</span></a>
   <script src="script.js?v=60"></script>
+  <script src="analytics-events.js?v=62"></script>
 </body>
 </html>
