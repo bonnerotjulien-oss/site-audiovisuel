@@ -6,14 +6,13 @@
 
   const sendEvent = (name, params = {}) => {
     try {
-      window.dataLayer.push({ event: name, ...params });
       window.gtag("event", name, params);
     } catch (_) {}
   };
 
   const pageService = document.body.dataset.servicePage || "";
 
-  document.addEventListener("DOMContentLoaded", () => {
+  const initTracking = () => {
     if (pageService) {
       sendEvent("service_page_view", {
         service_page: pageService,
@@ -40,7 +39,8 @@
       }, { once: true });
     }
 
-    document.querySelectorAll("form[data-track-form]").forEach((form) => {
+    // Formulaires des pages services uniquement.
+    document.querySelectorAll("form.service-lead-form[data-track-form]").forEach((form) => {
       const status = form.querySelector(".service-form-status");
 
       form.addEventListener("submit", async (event) => {
@@ -53,6 +53,7 @@
 
         const button = form.querySelector('button[type="submit"]');
         const original = button ? button.innerHTML : "";
+
         if (button) {
           button.disabled = true;
           button.innerHTML = "<span>Envoi en cours…</span>";
@@ -69,15 +70,19 @@
           if (!response.ok) throw new Error("Form submit failed");
 
           sendEvent("form_submit", {
-            form_name: form.dataset.trackForm || "contact",
-            service_page: pageService || "homepage",
+            form_name: form.dataset.trackForm || "service_contact",
+            service_page: pageService,
             page_path: window.location.pathname
           });
 
-          if (status) status.textContent = "Merci. Votre demande a bien été envoyée. Réponse sous 24 h.";
+          if (status) {
+            status.textContent = "Merci. Votre demande a bien été envoyée. Réponse sous 24 h.";
+          }
           form.reset();
         } catch (_) {
-          if (status) status.textContent = "L’envoi n’a pas abouti. Réessayez dans quelques instants.";
+          if (status) {
+            status.textContent = "L’envoi n’a pas abouti. Réessayez dans quelques instants.";
+          }
         } finally {
           if (button) {
             button.disabled = false;
@@ -86,5 +91,19 @@
         }
       });
     });
+  };
+
+  document.addEventListener("site_form_success", (event) => {
+    sendEvent("form_submit", {
+      form_name: event.detail?.form_name || "homepage_contact",
+      service_page: "homepage",
+      page_path: window.location.pathname
+    });
   });
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initTracking);
+  } else {
+    initTracking();
+  }
 })();
