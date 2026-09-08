@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://julienbonnerot.fr/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://julienbonnerot.fr/cas-live-sportif.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://julienbonnerot.fr/cas-plateau-interview.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://julienbonnerot.fr/cas-contenu-medical.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://julienbonnerot.fr/</loc><lastmod>2026-09-08</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://julienbonnerot.fr/captation-multicam-bordeaux.html</loc><lastmod>2026-09-08</lastmod><changefreq>monthly</changefreq><priority>0.95</priority></url>
+  <url><loc>https://julienbonnerot.fr/live-streaming-bordeaux.html</loc><lastmod>2026-09-08</lastmod><changefreq>monthly</changefreq><priority>0.95</priority></url>
+  <url><loc>https://julienbonnerot.fr/videaste-entreprise-bordeaux.html</loc><lastmod>2026-09-08</lastmod><changefreq>monthly</changefreq><priority>0.95</priority></url>
+  <url><loc>https://julienbonnerot.fr/cas-live-sportif.html</loc><lastmod>2026-09-08</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://julienbonnerot.fr/cas-plateau-interview.html</loc><lastmod>2026-09-08</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://julienbonnerot.fr/cas-contenu-medical.html</loc><lastmod>2026-09-08</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>
